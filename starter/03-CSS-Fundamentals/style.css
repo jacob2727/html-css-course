@@ -9,6 +9,7 @@ body {
   color: #444;
   font-family: sans-serif;
   border-top: 10px solid #1098ad;
+  position: relative;
   /* background-color: orangered; */
 }
 
@@ -179,5 +180,56 @@ nav a:link {
 }
 
 nav a:link:last-child {
-  margin-right: ;
+  margin-right: 0;
+}
+
+.like-btn {
+  display: flex;
+  height: 24px;
+  align-items: center;
+  padding: 26px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  border: 1px darkgrey solid;
+  cursor: pointer;
+  background-color: rgb(238, 238, 238);
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  transition: background-color 0.15s;
+}
+
+.like-btn:hover {
+  background-color: rgb(218, 217, 217);
+}
+
+.like-btn:active {
+  background-color: rgb(199, 199, 199);
+}
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* h3 + p::first-line {
+  color: red;
+} */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  display: inline-block;
+  background-color: yellow;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px 10px;
+  position: absolute;
+  top: -16px;
+  right: -24px;
 }
