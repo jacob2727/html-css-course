@@ -22,6 +22,7 @@ FONT SIZE SYSTEM (px)
 body {
   font-family: "Inter", sans-serif;
   color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -55,7 +56,6 @@ h2 {
   text-transform: uppercase;
   display: inline-block;
   font-weight: 500;
-  border-radius: 26px;
 }
 
 .btn:hover,
@@ -70,6 +70,8 @@ h2 {
   padding: 16px 32px;
 }
 .btn--small {
+  font-size: 14px;
+  padding: 18px 12px;
 }
 
 /* ------------------------ */
@@ -106,7 +108,12 @@ img {
 }
 
 /* FEATURES */
+
 .features-icon {
+  stroke: #087f5b;
+  height: 32px;
+  width: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -121,6 +128,9 @@ img {
 
 /* TESTIMONIAL */
 .testimonial-section {
+  background-color: #087f5b;
+  color: white;
+  padding: 24px;
 }
 
 .testimonial-box {
@@ -141,6 +151,12 @@ img {
 }
 
 /* CHAIRS */
+
+.chair {
+  box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.2s;
+}
+
 .chair-box {
   padding: 24px;
 }
@@ -177,4 +193,10 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #495057;
+}
+
+.cart-icon {
+  height: 24px;
+  width: 24px;
 }
